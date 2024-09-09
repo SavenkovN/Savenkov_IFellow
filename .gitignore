@@ -1,7 +1,3 @@
-.idea/replstate.xml
-temp/
-.idea/**/dataSources/
-*.zip
 /.idea
 /.allure
 /target
