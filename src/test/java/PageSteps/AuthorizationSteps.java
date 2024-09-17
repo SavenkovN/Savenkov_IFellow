@@ -3,7 +3,7 @@ package PageSteps;
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
-import static PageObject.PageElements.AutorizePage.*;
+import static PageObject.PageElements.AuthorizationPage.*;
 import static com.codeborne.selenide.Selenide.open;
 import static Utils.Configuration.getConfigurationValue;
 
