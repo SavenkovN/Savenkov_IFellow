@@ -4,6 +4,8 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Screenshots;
 import com.codeborne.selenide.WebDriverRunner;
 import com.google.common.io.Files;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
@@ -23,6 +25,7 @@ import static com.sun.activation.registries.LogSupport.log;
 public class WebHooks {
 
     @BeforeEach()
+    @Before
     public void setDriverFromProps() {
         WebDriver driver;
         driver = new ChromeDriver();
@@ -70,6 +73,7 @@ public class WebHooks {
     }
 
     @AfterEach()
+    @After
     public void driverClose() {
         /**
          * Строка с AllureHelper нужна для прикрепления скриншота перед закрытием драйвера
