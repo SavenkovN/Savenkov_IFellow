@@ -23,22 +23,32 @@
         <restAssured.version>4.2.0</restAssured.version>
         <cucumber.version>7.14.0</cucumber.version>
         <log4j.version>1.2.17</log4j.version>
-        <log4jCore.version>2.13.2</log4jCore.version>
+        <log4jCore.version>2.17.0.redhat-00001</log4jCore.version>
         <aspectj.version>1.9.19</aspectj.version>
         <owner.version>1.0.10</owner.version>
         <jsch.version>0.1.55</jsch.version>
-        <sshd-core.version>2.7.0</sshd-core.version>
+        <sshd-core.version>2.9.3</sshd-core.version>
         <allureJunit5.version>2.24.0</allureJunit5.version>
         <cucumber.7.jvm.version>2.24.0</cucumber.7.jvm.version>
         <allure.version>2.24.0</allure.version>
         <allure-maven.version>2.24.0</allure-maven.version>
-        <json.version>20210307</json.version>
+        <json.version>20231013</json.version>
 
         <parallelCount>1</parallelCount>
     </properties>
 
 
     <dependencies>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy</artifactId>
+            <version>3.0.9</version> <!-- Обновите до последней версии -->
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.36</version> <!-- Убедитесь, что используете последнюю стабильную версию -->
+        </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -109,7 +119,7 @@
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>${log4jCore.version}</version>
+            <version>2.17.0.redhat-00001</version>
         </dependency>
         <dependency>
             <groupId>org.apache.sshd</groupId>
@@ -200,6 +210,12 @@
             </plugin>
         </plugins>
     </build>
-
+    <repositories>
+        <repository>
+            <id>redhat-ga</id>
+            <name>Red Hat GA</name>
+            <url>https://maven.repository.redhat.com/ga/</url>
+        </repository>
+    </repositories>
 
 </project>
