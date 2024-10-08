@@ -1,4 +1,4 @@
-import Hooks.WebHooks;
+import hooks.WebHooks;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

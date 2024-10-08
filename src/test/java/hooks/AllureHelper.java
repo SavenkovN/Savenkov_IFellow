@@ -1,4 +1,4 @@
-package Hooks;
+package hooks;
 
 import io.qameta.allure.Allure;
 import org.junit.jupiter.api.extension.AfterTestExecutionCallback;

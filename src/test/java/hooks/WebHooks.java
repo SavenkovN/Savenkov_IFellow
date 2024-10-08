@@ -1,4 +1,4 @@
-package Hooks;
+package hooks;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Screenshots;
@@ -7,7 +7,6 @@ import com.google.common.io.Files;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
